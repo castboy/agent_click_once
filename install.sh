@@ -14,7 +14,7 @@ line=`sed -n '/\[partition\]/=' $file | tail -n1`
 #agent_hosts="192.168.1.103;192.168.1.104;192.168.1.105"
 #agent_hosts=$(apt_show_app agent)
 #agent_hosts=($agent_hosts)
-kafka_brokers=$(apt_config_show kafka brokers)
+kafka_brokers=$(apt_show_app agent)
 kafka_brokers=($kafka_brokers)
 partition=0
 
